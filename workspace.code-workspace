@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\flask_backend"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flask_backend",
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}
