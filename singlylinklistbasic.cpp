@@ -127,7 +127,7 @@ void reverse()
     //  show();
     //  showmiddle();
     // popfromendandaddatlast();
-     reverse();
+     //reverse();
      show();
       return 0;  
  }
