@@ -6,19 +6,19 @@ void print_lexicography(int x, int &n )
  
     if(x>n )
       return;
-       
+   
        cout<<x<<" ";
-    for(int i=0; i<=9; i++)
+    for(int i= (x==0)?1:0; i<=9; i++)   // putting condition for starting point of thr loop
         print_lexicography(x*10 + i, n);
 }
 int main()
 {   
     int n;
     cin >> n;
-    cout<<0<<" ";
+    
     vector<int> vect;
   
-     for(int i=1; i<=9 ; i++)
-      print_lexicography( i, n);
+  
+      print_lexicography( 0, n);
     return 0;
 }
