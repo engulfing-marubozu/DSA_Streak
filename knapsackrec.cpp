@@ -9,6 +9,8 @@ int arr(int i, int j)
 {   
     if(i==0||j==0)
      return 0;
+//     if(j<0)
+//       return INT16_MIN; 
     
     int x;
             if(rupee[i]>j)
