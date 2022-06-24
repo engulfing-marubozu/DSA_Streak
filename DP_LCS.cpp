@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-string S1="ecfbefdcfca";
-string S2="badfcbebbf";
+string S1="babad";
+string S2="dabab";
 vector<vector<int>> dp(S1.length()+1, vector<int>(S2.length()+1,0));
 
 void make_dp_array(string S1, string S2)
