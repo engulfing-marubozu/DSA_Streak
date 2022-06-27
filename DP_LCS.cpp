@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-string S1="babad";
-string S2="dabab";
+string S1="aaaaaaaaaaaaaaaaaaaaaaaaaaa";
+string S2="aaaaaaaaaaaaaaaaaaaaaaaaaaa";
 vector<vector<int>> dp(S1.length()+1, vector<int>(S2.length()+1,0));
-
+int x=0;
 void make_dp_array(string S1, string S2)
 {
 
@@ -33,6 +33,7 @@ void len_lcs(string S1, string S2)
         cout<<"The length of the longest common subsequence of both the above mentioned string is " <<dp[S1_len-1][S2_len-1]<<endl;
 
 }
+
 void print_lcs(string S1, string S2)
 { 
    string S;
