@@ -18,7 +18,8 @@ void bfs_show(vector<int> vect[], vector<bool> &validate)
 {   
    queue<int> q;
    q.push(1);
-   while(!q.empty())
+   validate[1]=true;
+  while(!q.empty())
    {
        for(int i=0; i<vect[q.front()].size(); i++)
          {    if(validate[vect[q.front()][i] ]==false)
@@ -30,6 +31,7 @@ void bfs_show(vector<int> vect[], vector<bool> &validate)
          q.pop();
 
     }
+    cout<<endl;
 }
 
 void dfs_show(int data, vector<int> vect[], vector<bool> &validatee)
