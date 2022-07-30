@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 #define ll long long int 
 using namespace std;
+
+// YOU CAN PICK ANY TWO INDEX FORM A STRING(ONLY ONCE) AND REPLACE IT WITH THE SUM OF DIGITS. RETURN THE MAXIMUM POSSIBLE STRNG AFTER THIS OPERATION
+//    99999 -> 99917
+//    121 -> 31
+// 782302 -> 710302
+
+
+
  string  maximumString(string s)
  {
    int replacing_num =-1, replacing_index=-1;
