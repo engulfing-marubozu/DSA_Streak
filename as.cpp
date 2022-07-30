@@ -1,49 +1,55 @@
 #include<bits/stdc++.h>
 #define ll long long int 
 using namespace std;
- 
-int solve(int length, string N)
-{  
+ string  maximumString(string s)
+ {
+   int replacing_num =-1, replacing_index=-1;
+   int size= s.length();
+    for(int i=size-2; i>=0; i--)
+   {
+       int a = s[i] - '0';
+       int b = s[i+1]-'0';
+        if(a+b>9)
+          {
+            replacing_num = a+b;
+            replacing_index= i;
+            break;
+          }
+   }
+if(replacing_num != -1)
+   {
+    
+    s.erase(replacing_index, 2);
+    s.insert(replacing_index,to_string(replacing_num));
+    return s;
+   }
+   else
+   {
+    
+     for(int i=0; i<size-1; i++)
+   {
+       int a = s[i] - '0';
+       int b = s[i+1]-'0';
+      if(a+b<10)
+          {
+            replacing_num = a+b;
+            replacing_index= i;
+            break;
+          }
+   }
+    s.erase(replacing_index, 2);
+    s.insert(replacing_index,to_string(replacing_num) );
+    return s;
+   }
 
-  vector<string> vect;
-  vect.push_back("1111110");
-  vect.push_back("0110000");
-  vect.push_back("1101101");
-  vect.push_back("1111001");
-  vect.push_back("0110011");
-  vect.push_back("1011011");
-  vect.push_back("0011111");
-  vect.push_back("1110000");
-  vect.push_back("1111111");
-  vect.push_back("1110011");
-   
-  int res=0;
-  for(int i=0; i<length-1; i++)
-    { 
-  
-       
-      int r = (int)N[i]-48;
-      int o= (int)N[i+1]-48;
-     // cout<<r<< ' '<<o;
-      string l = vect[r];
-       string  m = vect[o];
-       for(int j=0; j<7; j++)
-         {
-        
-          if(l[j]!=m[j])
-           res++;
-         }
-    }
+ }
 
-     // cout<<res;
-    return res;
-}
  int main()
  {
-  int n;
-  string x;
-  cin>>n>>x;
-  int y= solve(n,x);
-cout<<y;
+
+    string S;
+    cin>>S;
+   cout<< maximumString(S);
+   
   return 0;
  }

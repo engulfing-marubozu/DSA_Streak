@@ -1,0 +1,1 @@
+vector<bool> validatee(7,false);
