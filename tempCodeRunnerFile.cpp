@@ -1,1 +1,3 @@
-vector<bool> validatee(7,false);
+ for(auto it: a)
+                //     cout<<it<<" ";
+                //     cout<<endl;
