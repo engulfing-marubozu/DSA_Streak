@@ -1,3 +1,3 @@
- for(auto it: a)
-                //     cout<<it<<" ";
-                //     cout<<endl;
+   for(auto it : arr)
+     cout<<it<<" ";
+     cout<<endl;
