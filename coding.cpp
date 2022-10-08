@@ -72,5 +72,7 @@ int main()
 { int k=4;
    vector<int> A ={1,2,4,2,5,7,2,4,9,0,9};
  cout<< maxProfit(k, A);
+ deque<int> dq;
+ 
    return 0;
 }
