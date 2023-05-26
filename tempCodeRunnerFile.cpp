@@ -1,2 +1,7 @@
-r(int i=0; i<n; i++)
-     cin>>arr[i];
+ // Stack s;
+      // s.push(10);
+      // s.push(20);
+  
+      // cout<<s.top();
+      // s.pop();
+      //  cout<<s.top();
